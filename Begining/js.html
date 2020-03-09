@@ -20,15 +20,18 @@
 </head>
 <body>
     <script> 
-    function pow(x,y){
-      // return x**y;
-    };
+    function pow(x,n) {
+      if(n<0||(Math.round(n)!=n)) return NaN;
+       return x**n;
+    }
    </script>
 
     <script src="c.js"></script>
   
     <div id="mocha"></div>
 
-    <script>mocha.run();</script>
+    <script>
+      mocha.run();
+    </script>
 </body>
 </html>
